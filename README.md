@@ -34,13 +34,7 @@ It implements a complete **user registration and login system** with **secure pa
 
 ## System Architecture
 
-React Frontend (Port 3333)
-↓
-Apollo Client (GraphQL)
-↓
-GraphQL Server – Apollo Server (Port 4000)
-↓
-PostgreSQL Database
+React Frontend (Port 3333) -> Apollo Client (GraphQL) -> GraphQL Server – Apollo Server (Port 4000) -> PostgreSQL Database
 
 
 ---
