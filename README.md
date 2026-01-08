@@ -75,7 +75,7 @@ CREATE TABLE users (
   password VARCHAR(255) NOT NULL
 ); 
 
-2️) Run Backend (GraphQL Server)
+### 2️) Run Backend (GraphQL Server)
 
 cd project-react-backend
 yarn ts-node src/index.ts
@@ -84,7 +84,7 @@ yarn ts-node src/index.ts
 Backend will run at:
 http://127.0.0.1:4000
 
-3️) Run Frontend (React)
+### 3️) Run Frontend (React)
 cd project-react
 yarn start
 
@@ -93,19 +93,19 @@ http://localhost:3333
 
 ## Testing the Application
 
-Register
+### Register
 
 Enter a valid name, email, and password
 Password must be at least 6 characters
 User is stored securely in the database
 
-Login
+### Login
 
 Enter registered email and password
 Correct credentials → Login successful
 Invalid credentials → Error message shown
 
-Backend Testing
+### Backend Testing
 
 GraphQL mutations can be tested using the local GraphQL Playground at: http://127.0.0.1:4000
 
