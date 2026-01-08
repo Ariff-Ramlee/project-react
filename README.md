@@ -55,41 +55,7 @@ React Frontend (Port 3333) -> Apollo Client (GraphQL) -> GraphQL Server – Apol
 
 ### Directory
 
-project-react/
-├── node_modules/
-├── project-react-backend/
-│   ├── node_modules/
-│   ├── src/
-│   │   ├── db.ts              # PostgreSQL database connection
-│   │   ├── index.ts           # GraphQL server entry point
-│   │   ├── resolvers.ts       # GraphQL resolvers (login, register)
-│   │   └── schema.ts          # GraphQL schema definitions
-│   ├── .env                   # Environment variables (DB credentials)
-│   └── tsconfig.json          # TypeScript configuration (backend)
-│
-├── public/
-│
-├── src/
-│   ├── Components/
-│   │   ├── Auth.css           # Authentication page styles
-│   │   ├── Login.tsx          # Login component
-│   │   └── Register.tsx       # Registration component
-│   │
-│   ├── graphql/
-│   │   └── mutations.ts       # GraphQL mutations (login & register)
-│   │
-│   ├── utils/
-│   │   └── validation.ts      # Frontend form validation logic
-│   │
-│   ├── App.tsx                # Main application component
-│   └── index.tsx              # React entry point
-│
-├── .env                       # Frontend environment variables (optional)
-├── README.md                  # Project documentation
-└── tsconfig.json              # TypeScript configuration (frontend)
-
-  
-  
+<img width="557" height="635" alt="image" src="https://github.com/user-attachments/assets/054243a7-e2f0-4750-aa01-c16d7fe6fe15" />
 
 ---
 
