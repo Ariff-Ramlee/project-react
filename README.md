@@ -86,6 +86,7 @@ Ensure PostgreSQL is running locally and the database is created.
 Example table structure:
 
 sql
+
 CREATE TABLE users (
   unique_id SERIAL PRIMARY KEY,
   name VARCHAR(100),
@@ -94,12 +95,12 @@ CREATE TABLE users (
 ); 
 
 2️) Run Backend (GraphQL Server)
+
 cd project-react-backend
 yarn ts-node src/index.ts
 
 
 Backend will run at:
-
 http://127.0.0.1:4000
 
 3️) Run Frontend (React)
@@ -125,8 +126,7 @@ Invalid credentials → Error message shown
 
 Backend Testing
 
-GraphQL mutations can be tested using the local GraphQL Playground at:
-http://127.0.0.1:4000
+GraphQL mutations can be tested using the local GraphQL Playground at: http://127.0.0.1:4000
 (p/s: Sometimes the sandbox disconnected to the server, but can still be achiveable by running pgAdmin 4 software)
 
 ## Security Considerations
@@ -139,20 +139,20 @@ Frontend validation improves usability
 Backend validation ensures security
 
 Example Attachments
-The usage of Apollo GraphQL Sandbox query for register and log in
+### The usage of Apollo GraphQL Sandbox query for register and log in
 <img width="1600" height="820" alt="image" src="https://github.com/user-attachments/assets/0f4ff588-43ca-44ff-aadf-c31d9988fa7b" />
 
 <img width="1600" height="754" alt="image" src="https://github.com/user-attachments/assets/f0b4c130-f244-40c4-b3d3-f7e275d55505" />
 
-Log in and register page website
+### Log in and register page website
 <img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/341761a4-fbf1-468b-9e3a-dec1e8c19a5f" />
 
 <img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/fc4ae881-30d9-47da-9e1f-86a883b5da60" />
 
-Hashing of the password inside the database
+### Hashing of the password inside the database
 <img width="1528" height="629" alt="image" src="https://github.com/user-attachments/assets/e782c20e-25f6-47ce-93ae-3d3f15483e2d" />
 
-Error handling message for both log in and register page
+### Error handling message for both log in and register page
 <img width="1600" height="757" alt="image" src="https://github.com/user-attachments/assets/682afd8b-1e97-4ae4-b644-6d07d61f4682" />
 
 <img width="1600" height="822" alt="image" src="https://github.com/user-attachments/assets/0e68d80a-c0f5-4d92-88a7-ffa1b304d472" />
