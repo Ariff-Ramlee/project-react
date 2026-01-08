@@ -120,7 +120,8 @@ Generic error messages prevent information leakage
 Frontend validation improves usability
 Backend validation ensures security
 
-Example Attachments
+## Example Attachments
+
 ### The usage of Apollo GraphQL Sandbox query for register and log in
 <img width="1600" height="820" alt="image" src="https://github.com/user-attachments/assets/0f4ff588-43ca-44ff-aadf-c31d9988fa7b" />
 
