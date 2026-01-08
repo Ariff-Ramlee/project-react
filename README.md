@@ -96,13 +96,17 @@ http://localhost:3333
 ### Register
 
 Enter a valid name, email, and password
+
 Password must be at least 6 characters
+
 User is stored securely in the database
 
 ### Login
 
 Enter registered email and password
+
 Correct credentials → Login successful
+
 Invalid credentials → Error message shown
 
 ### Backend Testing
