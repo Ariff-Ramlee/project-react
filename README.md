@@ -53,28 +53,34 @@ React Frontend (Port 3333) -> Apollo Client (GraphQL) -> GraphQL Server – Apol
 
 ## Project Structure
 
-### Frontend
-project-react/
-├── src/
-│ ├── components/
-│ │ ├── Login.tsx
-│ │ ├── Register.tsx
-│ ├── graphql/
-│ │ └── mutations.ts
-│ ├── utils/
-│ │ └── validation.ts
-│ ├── App.tsx
-│ └── index.tsx
+### Directory
 
-### Backend
-project-react-backend/
-├── src/
-│ ├── index.ts
-│ ├── db.ts
-│ ├── schema.ts
-│ └── resolvers.ts
-├── .env
-├── tsconfig.json
+project-react
+  node-modules
+  project-react-backend
+    node_modules
+    src
+      db.ts
+      index.ts
+      resolvers.ts
+      schema.ts
+    .env
+  public
+  src
+    components
+      Auth.css
+      Login.tsx
+      Register.tsx
+    graphql
+      mutations.ts
+    utils
+      validation.ts
+    App.tsx
+    index.tsx
+  .env
+  README.md
+  tsconfig.json
+  
 
 ---
 
@@ -127,6 +133,7 @@ Invalid credentials → Error message shown
 Backend Testing
 
 GraphQL mutations can be tested using the local GraphQL Playground at: http://127.0.0.1:4000
+
 (p/s: Sometimes the sandbox disconnected to the server, but can still be achiveable by running pgAdmin 4 software)
 
 ## Security Considerations
