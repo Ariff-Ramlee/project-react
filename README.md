@@ -56,30 +56,55 @@ React Frontend (Port 3333) -> Apollo Client (GraphQL) -> GraphQL Server – Apol
 ### Directory
 
 project-react
+
   node-modules
+  
   project-react-backend
+  
     node_modules
+    
     src
+    
       db.ts
+      
       index.ts
+      
       resolvers.ts
+      
       schema.ts
+      
     .env
+    
   public
+  
   src
+  
     components
+    
       Auth.css
+      
       Login.tsx
+      
       Register.tsx
+      
     graphql
+    
       mutations.ts
+      
     utils
+    
       validation.ts
+      
     App.tsx
+    
     index.tsx
+    
   .env
+  
   README.md
+  
   tsconfig.json
+  
   
 
 ---
