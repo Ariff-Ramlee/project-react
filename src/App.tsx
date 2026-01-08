@@ -1,14 +1,19 @@
-import React from "react";
+import { useState } from "react";
 import Login from "./components/Login";
-import Register from "./components/Register";
+import RegisterModal from "./components/RegisterModal";
 
-const App: React.FC = () => {
+function App() {
+  const [showRegister, setShowRegister] = useState(false);
+
   return (
     <>
-      <Login />
-      <Register />
+      <Login onOpenRegister={() => setShowRegister(true)} />
+
+      {showRegister && (
+        <RegisterModal onClose={() => setShowRegister(false)} />
+      )}
     </>
   );
-};
+}
 
 export default App;

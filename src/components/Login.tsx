@@ -1,80 +1,93 @@
 import React, { useState } from "react";
 import { useMutation } from "@apollo/client/react";
 import { LOGIN_USER } from "../graphql/mutations";
-import "./Auth.css";
 import { isValidEmail, isValidPassword } from "../utils/validation";
+import "./Auth.css";
+
+type Props = {
+  onOpenRegister: () => void;
+};
 
 type LoginResponse = {
   login: string;
 };
 
-const Login: React.FC = () => {
+const Login: React.FC<Props> = ({ onOpenRegister }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  const [loginUser, { loading }] = useMutation<LoginResponse>(LOGIN_USER);
+  const [loginUser, { loading }] =
+    useMutation<LoginResponse>(LOGIN_USER);
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-  setErrorMessage("");
+    e.preventDefault();
+    setErrorMessage("");
 
-  // Email validation
-  if (!isValidEmail(email)) {
-    setErrorMessage("Please enter a valid email address.");
-    return;
-  }
-
-  // Password validation
-  if (!isValidPassword(password)) {
-    setErrorMessage("Password must be at least 6 characters long.");
-    return;
-  }
-
-  try {
-    const response = await loginUser({
-      variables: { email, password },
-    });
-
-    if (response.data) {
-      alert(response.data.login);
+    if (!isValidEmail(email)) {
+      setErrorMessage("Invalid email format.");
+      return;
     }
-  } catch (err: any) {
-    setErrorMessage(err.message || "Login failed");
-  }
-};
 
+    if (!isValidPassword(password)) {
+      setErrorMessage("Password must be at least 6 characters.");
+      return;
+    }
+
+    try {
+      const res = await loginUser({
+        variables: { email, password },
+      });
+
+      if (res.data) {
+        alert(res.data.login);
+      }
+    } catch {
+      setErrorMessage("Invalid email or password");
+    }
+  };
 
   return (
-    <div className="auth-container">
-      <h2>Login</h2>
+    <div className="page-wrapper">
+      <div className="window-bar">
+        <span />
+        <span />
+        <span />
+      </div>
 
-      <form onSubmit={handleSubmit}>
-        <input
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <input
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          type="password"
-          required
-        />
+      <div className="auth-container">
+        <h1>Login</h1>
 
-        <button type="submit" disabled={loading}>
-          {loading ? "Logging in..." : "Login"}
-        </button>
+        <p className="subtitle">
+          New here?{" "}
+          <span onClick={onOpenRegister}>Create an account</span>
+        </p>
 
-        {/* Error message */}
-        {errorMessage && (
-          <p style={{ color: "red", marginTop: "10px" }}>
-            {errorMessage}
-          </p>
-        )}
-      </form>
+        <form onSubmit={handleSubmit}>
+          <label>EMAIL</label>
+          <input
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="hello@reallygreatsite.com"
+          />
+
+          <label>PASSWORD</label>
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="******"
+          />
+
+          <button type="submit" disabled={loading}>
+            LOGIN
+          </button>
+
+          {errorMessage && (
+            <p className="error-text">{errorMessage}</p>
+          )}
+        </form>
+      </div>
     </div>
   );
 };
