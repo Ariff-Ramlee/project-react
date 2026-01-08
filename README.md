@@ -132,19 +132,20 @@ Backend validation ensures security
 <img width="1600" height="754" alt="image" src="https://github.com/user-attachments/assets/f0b4c130-f244-40c4-b3d3-f7e275d55505" />
 
 ### Log in and register page website
-<img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/341761a4-fbf1-468b-9e3a-dec1e8c19a5f" />
+<img width="1898" height="960" alt="image" src="https://github.com/user-attachments/assets/e5ef5ad5-18c3-479e-9267-b2008a5926a3" />
 
-<img width="1600" height="856" alt="image" src="https://github.com/user-attachments/assets/fc4ae881-30d9-47da-9e1f-86a883b5da60" />
+<img width="1895" height="952" alt="image" src="https://github.com/user-attachments/assets/784561d1-3689-42ef-9938-469877569290" />
 
 ### Hashing of the password inside the database
 <img width="1528" height="629" alt="image" src="https://github.com/user-attachments/assets/e782c20e-25f6-47ce-93ae-3d3f15483e2d" />
 
 ### Error handling message for both log in and register page
-<img width="1600" height="757" alt="image" src="https://github.com/user-attachments/assets/682afd8b-1e97-4ae4-b644-6d07d61f4682" />
+<img width="1900" height="869" alt="image" src="https://github.com/user-attachments/assets/c09d58dd-8758-431a-a6ce-919e5ace1e48" />
 
-<img width="1600" height="822" alt="image" src="https://github.com/user-attachments/assets/0e68d80a-c0f5-4d92-88a7-ffa1b304d472" />
+<img width="1895" height="864" alt="image" src="https://github.com/user-attachments/assets/70033e33-4e09-4318-a7df-e0bfc6f2a5b6" />
 
-<img width="1600" height="823" alt="image" src="https://github.com/user-attachments/assets/bfc60e1d-ec90-49b0-a357-48540ee74583" />
+<img width="1898" height="865" alt="image" src="https://github.com/user-attachments/assets/21d23d21-1e30-4583-b448-bc4d8d130b4b" />
+
 
 
 
