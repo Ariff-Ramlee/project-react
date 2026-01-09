@@ -45,7 +45,7 @@ const Register: React.FC<Props> = ({ onBackToLogin }) => {
       });
 
       alert("Registration successful");
-      onBackToLogin(); // ✅ CLOSE MODAL
+      onBackToLogin(); 
     } catch (err: any) {
       setErrorMessage(err.message);
     }
